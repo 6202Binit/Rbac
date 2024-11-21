@@ -1,0 +1,102 @@
+/* Container Styling */
+.user-management-container {
+    min-height: 100vh;
+    background-color: #f7fafc;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Header Styling */
+  .user-management-header {
+    font-size: 2rem;
+    color: #2d3748;
+    margin-bottom: 20px;
+  }
+  
+  /* Table Styling */
+  .user-table {
+    width: 100%;
+    max-width: 1000px;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .table-header {
+    background-color: #edf2f7;
+    font-size: 14px;
+    color: #4a5568;
+    text-transform: uppercase;
+    padding: 12px;
+  }
+  
+  .table-row {
+    border-bottom: 1px solid #e2e8f0;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .table-row:hover {
+    background-color: #f0fff4;
+  }
+  
+  .table-data {
+    padding: 12px 16px;
+    text-align: left;
+  }
+  
+  /* Dropdown Styling */
+  .role-select, .status-select {
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #e2e8f0;
+    outline: none;
+    width: 100%;
+  }
+  
+  .role-select:focus, .status-select:focus {
+    border-color: #48bb78;
+    box-shadow: 0 0 4px rgba(72, 187, 120, 0.6);
+  }
+  
+  /* Button Styling */
+  .delete-button {
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #e53e3e;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .delete-button:hover {
+    background-color: #c53030;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .user-table {
+      font-size: 12px;
+    }
+  
+    .table-header, .table-data {
+      padding: 10px;
+    }
+  
+    .role-select, .status-select {
+      font-size: 12px;
+    }
+  
+    .delete-button {
+      width: 100%;
+      font-size: 13px;
+    }
+  }
+  
